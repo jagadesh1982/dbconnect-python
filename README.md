@@ -2,12 +2,12 @@
 Sample Code for Connecting to mySql , inserting and querying using python code
 
 # Installing my Sql on Centos 7
-wget https://repo.mysql.com/mysql80-community-release-el7-1.noarch.rpm
-yum localinstall mysql80-community-release-el7-1.noarch.rpm
-yum repolist enabled | grep "mysql.*-community.*"
-yum install mysql-community-server
-service mysqld start
-service mysqld status
+wget https://repo.mysql.com/mysql80-community-release-el7-1.noarch.rpm \
+yum localinstall mysql80-community-release-el7-1.noarch.rpm \
+yum repolist enabled | grep "mysql.*-community.*" \
+yum install mysql-community-server \
+service mysqld start \
+service mysqld status \
 mysql --version
 
 # get root password : grep 'temporary password' /var/log/mysqld.log
